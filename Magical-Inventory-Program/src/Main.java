@@ -95,13 +95,12 @@ public class Main {
         
         jmiAbout.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                
                 JOptionPane.showMessageDialog(null, "Magical Inventory Program. (c) 2015 KNPhoenix.", "About", JOptionPane.PLAIN_MESSAGE);
             }
                     });
         jmiExit.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
-                
+                System.exit(0);
             }
         });
         
