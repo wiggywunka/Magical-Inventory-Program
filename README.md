@@ -8,7 +8,7 @@ I'd honestly recommend downloading the ```MIP-Release.jar``` file and just using
 
 ## FAQ
 ### What is this?
-It's a Java-based inventory management program?
+It's a Magical Java-based inventory management program?
 
 ### How does it work?
 Well...at the moment...It doesn't actually work. I'm putting it together at the moment.
