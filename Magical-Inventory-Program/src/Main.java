@@ -13,46 +13,11 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
-/*
- * Copyright 2015 fabrizio.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-/**
- *
- * @author KNPhoenix
- */
 
 public class Main {
 
     public static void main(String[] args) {
-        splashScreen();
         mainMenu();
-    }
-
-    public static void splashScreen(){
-        SplashScreen splashScreen = SplashScreen.getSplashScreen();
-        Graphics2D graphics = (Graphics2D) splashScreen.createGraphics();
-        Dimension dim = splashScreen.getSize();
-       for (int i = 0; i < 10; i++) {
-        
-        splashScreen.update();
-        try {
-            Thread.sleep(250);
-        } catch (InterruptedException ignored) {
-        }
-        }
     }
     public static void mainMenu() {
         JFrame mainMenu = new JFrame("Magical Inventory Program");
@@ -93,15 +58,11 @@ public class Main {
         jmHelp.add(jmiAbout);
         menuBar.add(jmHelp);
         
-        jmiAbout.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                JOptionPane.showMessageDialog(null, "Magical Inventory Program. (c) 2015 KNPhoenix.", "About", JOptionPane.PLAIN_MESSAGE);
-            }
-                    });
-        jmiExit.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                System.exit(0);
-            }
+        jmiAbout.addActionListener((ActionEvent e) -> {
+            JOptionPane.showMessageDialog(null, "Magical Inventory Program. (c) 2015 KNPhoenix.", "About", JOptionPane.PLAIN_MESSAGE);
+        });
+        jmiExit.addActionListener((ActionEvent e) -> {
+            System.exit(0);
         });
         
         mainMenu.setJMenuBar(menuBar);
