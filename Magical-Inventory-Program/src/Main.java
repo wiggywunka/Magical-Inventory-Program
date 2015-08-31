@@ -50,8 +50,15 @@ public class Main {
 
         JMenu jmOptions = new JMenu("Options");
         
+        JMenuItem jmiPreferences = new JMenuItem("Preferences");
+        
+        jmOptions.add(jmiPreferences);
+       jmiPreferences.addActionListener((ActionEvent e) -> {
+            JOptionPane.showMessageDialog(null, "[Placeholder Message Here]", "Preferences", JOptionPane.PLAIN_MESSAGE);
+        });
         
         menuBar.add(jmOptions);
+        
         
         JMenu jmHelp = new JMenu("Help");
         JMenuItem jmiAbout = new JMenuItem("About");
