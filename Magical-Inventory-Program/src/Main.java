@@ -1,9 +1,5 @@
 
-import java.awt.Dimension;
-import java.awt.Graphics2D;
-import java.awt.SplashScreen;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -15,6 +11,7 @@ import javax.swing.JOptionPane;
 
 
 public class Main {
+    
 
     public static void main(String[] args) {
         mainMenu();
@@ -34,6 +31,7 @@ public class Main {
         
 
         mainMenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         JMenuBar menuBar = new JMenuBar();
 
         JMenu menuFile = new JMenu("File");
@@ -54,7 +52,12 @@ public class Main {
         
         jmOptions.add(jmiPreferences);
        jmiPreferences.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(null, "[Placeholder Message Here]", "Preferences", JOptionPane.PLAIN_MESSAGE);
+            //JOptionPane.showMessageDialog(null, "[Placeholder Message Here]", "Preferences", JOptionPane.PLAIN_MESSAGE);
+           JFrame preferenceMenu = new JFrame("Preferences");
+           preferenceMenu.setLocationRelativeTo( mainMenu );
+           preferenceMenu.setSize(500, 300);
+           preferenceMenu.setVisible(true);
+           
         });
         
         menuBar.add(jmOptions);
