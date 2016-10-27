@@ -1,5 +1,5 @@
 # Magical-Inventory-Program
-A magical inventory program written in Java.
+A magical inventory program written in Java + JavaFX niceness.
 
 ## Setup
 ### How do I get setup?
@@ -8,7 +8,7 @@ I'd honestly recommend downloading the ```MIP-Release.jar``` file and just using
 
 ## FAQ
 ### What is this?
-It's a Magical Java-based inventory management program?
+A java based inventory "management" program that's more of a learning experiment than a actual business application.
 
 ### How does it work?
 Well...at the moment...It doesn't actually work. I'm putting it together at the moment.
