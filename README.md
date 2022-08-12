@@ -1,10 +1,12 @@
+# NON-FUNCTIONING #
+Please don't expect to make anything of it as it's just garbled nothing in a void of nothingness.
+
 # Magical-Inventory-Program
 A magical inventory program written in Java + JavaFX niceness.
 
 ## Setup
 ### How do I get setup?
-I'd honestly recommend downloading the ```MIP-Release.jar``` file and just using that.
-
+This isn't functional and was initially more of a "can I somehow do this?" type of projects.
 
 ## FAQ
 ### What is this?
